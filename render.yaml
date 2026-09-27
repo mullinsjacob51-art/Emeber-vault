@@ -39,15 +39,6 @@ services:
       - key: SMTP_FROM
         sync: false
 
-  - type: keyvalue
-    name: ember-vault-redis
-    plan: free
-    ipAllowList:
-      - source: 0.0.0.0/0
-        description: Render web service access
-    maxmemoryPolicy: noeviction
-    persistenceMode: off
-
 databases:
   - name: ember-vault-db
     plan: free
