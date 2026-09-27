@@ -3,6 +3,7 @@ services:
     name: ember-vault-afterlight
     runtime: node
     plan: free
+    region: ohio
     buildCommand: npm install
     startCommand: npm start
     healthCheckPath: /health
@@ -50,3 +51,4 @@ services:
 databases:
   - name: ember-vault-db
     plan: free
+    region: ohio
